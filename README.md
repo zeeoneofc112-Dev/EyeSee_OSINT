@@ -38,6 +38,29 @@ python eyesee.py
 # Cara 2: Dengan installer
 python Installer.py
 ```
+Backup run if not support Gitclone 
+
+unzip namafile.zip
+
+Ntar zipnya jadi folder
+
+Tinggal:
+
+cd namafolder
+
+python installer.py
+
+Sebagai contoh make EyeSee aja:
+
+`unzip EyeSee_OSINT_Tool.zip`
+
+`cd EyeSee`
+
+`python installer.py`
+
+`python eyesee.py`
+
+Ntar lakuin hal yang sama kalau mau jalanin program yang di zip
 
 Menu Utama EYESEE:
 
