@@ -225,7 +225,7 @@ Special Thanks:
 
 GrayHat Ethical Edition - Untuk tujuan baik dengan tanggung jawab penuh.
 
-© 2024 EYESEE v2.0 Pro - MR-Zeeone-Grayhat & Team
+© 2025 EYESEE v2.0 Pro - MR-Zeeone-Grayhat & Team
 
 ---
 
