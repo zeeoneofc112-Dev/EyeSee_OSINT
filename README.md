@@ -1,231 +1,257 @@
-# 👁️ EYESEE v1.0 - The All-Seeing OSINT Tool
 
-![EYESEE](https://img.shields.io/badge/EYESEE-v1.0_Hybrid-blue)
-![Python](https://img.shields.io/badge/Python-3.6%2B-green)
-![JavaScript](https://img.shields.io/badge/JavaScript-Node.js-yellow)
-![License](https://img.shields.io/badge/License-GrayHat_Ethical-orange)
-
-**EYESEE** adalah tools OSINT (Open Source Intelligence) hybrid yang menggabungkan kekuatan Python dan JavaScript dalam satu base code. Tools ini dirancang untuk investigasi digital yang etis dan legal.
-
-## 🎯 Filosofi
-- **👁️ Mata** - Melihat kebenaran melalui data digital
-- **🔍 Intelligence** - Mengumpulkan informasi dari sumber publik  
-- **⚖️ Ethical** - Untuk keadilan dan perlindungan
-
-## 🚀 Cara Menjalankan Tools
-
-### **Persiapan Sistem:**
 ```bash
-# Untuk Termux (Android)
-pkg update && pkg upgrade
-pkg install python nodejs -y
+cd EyeSee
+nano README.md
+```
 
-# Untuk Linux
-sudo apt update && sudo apt install python3 python3-pip nodejs npm
+```markdown
+# 👁️ EYESEE v2.0 Pro - Ultimate Accuracy OSINT Tool
 
-# Install Python dependencies
+![EYESEE](https://img.shields.io/badge/EYESEE-v2.0_Pro-blue)
+![Python](https://img.shields.io/badge/Python-3.6%2B-green)
+![OSINT](https://img.shields.io/badge/OSINT-Professional-orange)
+![License](https://img.shields.io/badge/License-GrayHat_Ethical-purple)
+
+**EYESEE v2.0 Pro** adalah tools OSINT (Open Source Intelligence) professional dengan multi-source verification dan accuracy tingkat tinggi. Tools ini menggabungkan teknologi Python dengan algoritma canggih untuk investigasi digital yang akurat dan andal.
+
+## 🚀 Features
+
+### 🔍 Core Investigation Features
+
+#### 🆔 **NIK Analyzer PRO**
+- Validasi format NIK Indonesia (16 digit)
+- Ekstrak informasi lengkap: provinsi, kabupaten, tanggal lahir
+- Analisis usia dan generasi
+- Data kode wilayah terupdate
+
+#### 📞 **Phone Lookup PRO** 
+- Tracking nomor telepon Indonesia
+- Deteksi operator detail (Telkomsel, Indosat, XL, dll)
+- Informasi brand dan tipe jaringan
+- Validasi format internasional & nasional
+
+#### 🌐 **IP Tracer PRO**
+- Geolokasi IP address multi-source
+- Informasi ISP dan organisasi lengkap
+- Koordinat latitude & longitude
+- Map URL untuk visualisasi
+
+#### 👤 **Social Media PRO**
+- Digital footprint analysis
+- Confidence-based scanning (Tinggi/Sedang/Rendah)
+- Multi-platform support: Instagram, Twitter, Facebook, TikTok, YouTube, GitHub, dll
+- Platform-specific verification
+
+#### 📧 **Email OSINT PRO**
+- Validasi format email advanced
+- Gravatar profile detection
+- Domain analysis dan provider check
+- Multiple verification methods
+
+#### 🚀 **Quick Scan PRO**
+- Auto-detection input type cerdas
+- Multi-platform concurrent scanning
+- Smart pattern recognition
+- Batch processing capability
+
+### ⚡ Advanced Features
+- **Multi-Source Verification** - Data dari berbagai sumber untuk akurasi maksimal
+- **Confidence Levels** - Tingkat kepercayaan hasil investigasi
+- **Professional Output** - Structured data dengan color-coded results
+- **High Accuracy Mode** - Algorithm canggih untuk hasil terbaik
+- **Hybrid Technology** - Python core dengan JavaScript enhancement
+
+## 🛠️ Installation
+
+### Quick Install (Recommended)
+```bash
+# Download tools
+# Ekstrak zip file
+
+# Run installer
+python Installer.py
+
+# Atau run langsung
+python eyesee.py
+```
+
+Manual Install
+
+```bash
+# Install dependencies
 pip install requests beautifulsoup4 phonenumbers
 
-# Install JavaScript dependencies (Optional)
-npm install google-libphonenumber
+# Run tools
+python eyesee.py
+```
 
-Jalankan EYESEE:
+Termux Installation
 
 ```bash
-# Cara 1: Langsung run
+pkg update && pkg upgrade
+pkg install python -y
+pip install requests bs4 phonenumbers
 python eyesee.py
-
-# Cara 2: Dengan installer
-python Installer.py
-```
-Backup run if not support Gitclone 
-
-unzip namafile.zip
-
-Ntar zipnya jadi folder
-
-Tinggal:
-
-cd namafolder
-
-python installer.py
-
-Sebagai contoh make EyeSee aja:
-
-`unzip EyeSee_OSINT_Tool.zip`
-
-`cd EyeSee`
-
-`python installer.py`
-
-`python eyesee.py`
-
-Ntar lakuin hal yang sama kalau mau jalanin program yang di zip
-
-Menu Utama EYESEE:
-
-```
-🎯 EYESEE INVESTIGATION MENU:
-══════════════════════════════════════════════
-1. 🆔  NIK Analyzer - Identitas Digital
-2. 📞  Number Tracker - Jejak Telekomunikasi 
-3. 🌐  IP Tracer - Geolokasi & ISP
-4. 👤  Social Scanner - Digital Footprint
-5. 📧  Email Investigator - Digital Identity
-6. 🚀  Quick Scan - Auto Multi-Scan
-7. ℹ️   Credits & Disclaimer
-8. 🚪  Keluar
 ```
 
-✨ Fitur-Fitur Tools
+🎯 Usage
 
-🔍 Core Investigation Features:
-
-1. NIK Analyzer
-
-· Validasi format NIK Indonesia (16 digit)
-· Ekstrak informasi: provinsi, tanggal lahir, jenis kelamin
-· Teknologi: Python + JavaScript validation
-
-2. Number Lookup
-
-· Tracking nomor telepon Indonesia
-· Deteksi operator (Telkomsel, Indosat, XL, dll)
-· Validasi format internasional & nasional
-· Teknologi: Hybrid Python + Google LibPhoneNumber
-
-3. IP Tracer
-
-· Geolokasi IP address
-· Informasi ISP dan organisasi
-· Data koordinat latitude & longitude
-
-4. Social Media Scanner
-
-· Digital footprint analysis
-· Check username across platforms:
-  · Instagram, Twitter, Facebook
-  · TikTok, YouTube, GitHub, Reddit
-
-5. Email Investigator
-
-· Validasi format email
-· Gravatar profile detection
-· Domain analysis
-
-6. Quick Scan
-
-· Auto-detection input type
-· Multi-platform scanning
-· Batch processing capability
-
-⚡ Advanced Features:
-
-· Hybrid Engine: Python core + JavaScript enhancement
-· Smart Detection: Auto-fallback ketika JavaScript tidak tersedia
-· Multi-threading: Concurrent scanning untuk performa optimal
-· Colorful UI: User interface yang informatif
-
-🛠️ Teknologi Yang Digunakan
-
-Python Core:
-
-· requests - HTTP requests
-· phonenumbers - Phone number parsing
-· beautifulsoup4 - HTML parsing
-· socket - Network operations
-
-JavaScript Enhancement:
-
-· google-libphonenumber - Advanced phone validation
-· Native Node.js - JavaScript runtime
-
-Hybrid Architecture:
-
-```python
-# Single base code - dual language power
-if js_engine_ready:
-    # Gunakan JavaScript untuk validasi
-else:
-    # Fallback ke Python murni
+```bash
+python eyesee.py
 ```
 
-⚠️ Disclaimer & Tanggung Jawab
+Menu Options:
 
-PENGGUNAAN YANG DIJINKAN:
+1. 🆔 NIK Analyzer PRO - Identitas Digital Lengkap
+2. 📞 Phone Lookup PRO - Jejak Telekomunikasi Detail
+3. 🌐 IP Tracer PRO - Geolokasi Multi-Source
+4. 👤 Social Media PRO - Digital Footprint Analysis
+5. 📧 Email OSINT PRO - Investigasi Email Advanced
+6. 🚀 Quick Scan PRO - Auto-Detection Intelligent
+7. 📊 System Info - Technical Information
+8. 🚪 Exit - Keluar dari tools
 
-✅ Investigasi legal dan etis
-✅ Penelitian keamanan siber
-✅ Edukasi dan pembelajaran
-✅ Verifikasi data publik
-✅ Perlindungan dari penipuan
+📊 Accuracy & Verification
 
-PENGGUNAAN YANG DILARANG:
+🎯 Accuracy Levels
 
-❌ Aktivitas illegal
-❌ Pelanggaran privasi
-❌ Penipuan atau scam
-❌ Stalking atau harassment
-❌ Tujuan kriminal
+· HIGH - Multi-source verification + pattern matching
+· MEDIUM - Single source + basic validation
+· LOW - Basic check only
 
-PERNYATAAN TANGGUNG JAWAB:
+🔍 Verification Methods
 
-"Tanggung jawab sepenuhnya berada pada pengguna, bukan developer."
-
-Developer tidak bertanggung jawab atas:
-
-· Penyalahgunaan tools untuk aktivitas illegal
-· Konsekuensi hukum dari penggunaan tools
-· Kerugian yang ditimbulkan oleh pengguna
-· Pelanggaran privasi yang dilakukan pengguna
-
-Setiap pengguna dianggap sudah:
-
-· Memahami risiko dan konsekuensi
-· Mematuhi hukum yang berlaku
-· Menggunakan tools dengan bijaksana
-· Bertanggung jawab penuh atas tindakannya
+· Cross-reference multiple data sources
+· Pattern recognition algorithms
+· Platform-specific validation
+· Real-time data checking
 
 👥 Development Team
 
-Lead Developer:
+🏆 Lead Developer
 
-· MR-Zeeone-Grayhat
+MR-Zeeone-Grayhat - Project Lead & Core Development
 
-Contributors:
+🔧 Elite Contributors
 
-· Aletta Code - Security Research
-· AortaVx - OSINT Specialist
-· TypeByte - Code Architecture
-· Haket Cyber - Cyber Intelligence
+· Aletta Code - Security Research & Algorithm Design
+· AortaVx - OSINT Methodology & Data Analysis
+· TypeByte - Code Architecture & Optimization
+· Haket Cyber - Cyber Intelligence & Threat Research
 
-📞 Support
+⚠️ Disclaimer & Legal
 
-Untuk Bantuan Teknis:
+✅ Approved Usage
 
-1. Pastikan dependencies terinstall
-2. Cek koneksi internet
-3. Gunakan Python 3.6+
-4. Node.js optional (untuk fitur JavaScript)
+· Investigasi legal dan etis
+· Penelitian keamanan siber
+· Edukasi dan pembelajaran OSINT
+· Verifikasi data publik
+· Perlindungan dari penipuan digital
 
-Untuk Issue Legal:
+❌ Prohibited Usage
 
-Konsultasi dengan ahli hukum setempat mengenai regulasi OSINT di wilayah Anda.
+· Aktivitas illegal dan kriminal
+· Pelanggaran privasi individu
+· Penipuan atau scam activities
+· Stalking atau harassment
+· Tujuan malicious lainnya
 
-🔄 Changelog
+📜 Legal Notice
 
-v1.0 (Current)
+"Tanggung jawab sepenuhnya berada pada pengguna tools ini. Developer tidak bertanggung jawab atas penyalahgunaan tools untuk aktivitas illegal atau tidak etis."
 
-· ✅ Hybrid Python + JavaScript architecture
-· ✅ 6 core investigation features
-· ✅ Auto-detection & fallback system
-· ✅ Ethical guidelines integration
+🔧 Technology Stack
 
-📜 License
+Core Technologies
 
-GrayHat Ethical Edition - Untuk tujuan baik dengan tanggung jawab.
+· Python 3.6+ - Main programming language
+· Requests - HTTP client for API calls
+· BeautifulSoup4 - HTML parsing and analysis
+· Phonenumbers - Phone number validation and parsing
+
+Advanced Features
+
+· Multi-threading - Concurrent processing untuk performance
+· Color-coded UI - User interface yang informatif
+· Smart Algorithms - Pattern recognition dan data validation
+· Modular Architecture - Easy maintenance dan expansion
+
+📈 Changelog
+
+v2.0 Pro (Current)
+
+· ✅ Ultimate Accuracy mode dengan multi-source verification
+· ✅ Professional grade output dengan confidence levels
+· ✅ Enhanced algorithms untuk semua fitur
+· ✅ Advanced error handling dan validation
+· ✅ Optimized performance dengan multi-threading
+
+v1.0 (Legacy)
+
+· Basic OSINT functionality
+· Standard accuracy levels
+· Simple output format
+
+🐛 Bug Reports & Support
+
+Reporting Issues
+
+Jika menemukan bug atau masalah, silakan:
+
+1. Cek dokumentasi ini terlebih dahulu
+2. Pastikan dependencies terinstall dengan benar
+3. Gunakan fitur System Info untuk troubleshooting
+
+Technical Support
+
+· Pastikan Python version 3.6+
+· Cek koneksi internet stabil
+· Gunakan Termux versi terbaru untuk Android
+
+🌟 Credits & Acknowledgments
+
+EYESEE v2.0 Pro dikembangkan dengan ❤️ oleh tim developer yang dedicated untuk memberikan tools OSINT terbaik untuk komunitas.
+
+Special Thanks:
+
+· Open source community untuk libraries dan resources
+· OSINT researcher worldwide untuk methodology
+· Beta testers untuk feedback dan improvement suggestions
 
 ---
 
-⚠️ PERINGATAN:
-Tools ini dibuat untuk edukasi dan penelitian. Pengguna bertanggung jawab penuh atas penggunaan tools ini. Selalu patuhi hukum yang berlaku di wilayah Anda.
+📄 License
+
+GrayHat Ethical Edition - Untuk tujuan baik dengan tanggung jawab penuh.
+
+© 2024 EYESEE v2.0 Pro - MR-Zeeone-Grayhat & Team
+
+---
+
+⚠️ PERINGATAN: Tools ini dibuat untuk tujuan edukasi dan penelitian legal. Pengguna bertanggung jawab penuh atas penggunaan tools ini. Selalu patuhi hukum yang berlaku di wilayah Anda.
+
+👁️ EYESEE - Because Truth Deserves Accuracy
+
+```
+
+## 💾 **SAVE FILE:**
+- **Ctrl+X** → **Y** → **Enter**
+
+## ✅ **VERIFIKASI:**
+
+```bash
+cat README.md
+ls -la README.md
+```
+
+🎯 README INI SUDAH PROFESSIONAL DENGAN:
+
+✅ Badges untuk visual yang menarik
+✅ Features detail dengan emoji
+✅ Installation guide lengkap
+✅ Usage instructions jelas
+✅ Team credits dengan roles
+✅ Legal disclaimer komprehensif
+✅ Technology stack detail
+✅ Professional formatting
